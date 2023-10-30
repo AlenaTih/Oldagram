@@ -36,7 +36,6 @@ function renderPosts() {
         const post = document.createElement("li")
         console.log(posts[i])
 
-
        post.innerHTML = `
             <section>
             <div class="artist-info container">
@@ -107,12 +106,14 @@ function renderPosts() {
                 localStorage.removeItem(`liked-${itemKey}`) // Remove from local storage
                 postEl.removeAttribute("data-liked") // Mark as unliked
                 iconEl.removeAttribute("data-liked") // Mark as unliked
+                iconEl.src = "images/icon-heart.png"
             } else {
                 // Like the post
                 number +=1 // Increment like count
                 localStorage.setItem(`liked-${itemKey}`, true) // Save to local storage
                 postEl.setAttribute("data-liked", "true") // Mark as liked
                 iconEl.setAttribute("data-liked", "true") // Mark as liked
+                iconEl.src = "images/red-like.png"
             }
 
                 countEl.textContent = number // Update what is rendered (display)
