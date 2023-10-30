@@ -115,7 +115,7 @@ li {
 }
 
 .icon:hover {
-    width: 8%;
+    opacity: 60%;
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
