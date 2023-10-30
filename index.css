@@ -106,10 +106,12 @@ li {
 
 .post-image {
     width: 100%;
+    cursor: pointer;
 }
 
 .icon {
     width: 6%;
+    cursor: pointer;
 }
 
 .icon:hover {
