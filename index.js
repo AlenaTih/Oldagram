@@ -113,7 +113,7 @@ function renderPosts() {
                 localStorage.setItem(`liked-${itemKey}`, true) // Save to local storage
                 postEl.setAttribute("data-liked", "true") // Mark as liked
                 iconEl.setAttribute("data-liked", "true") // Mark as liked
-                iconEl.src = "images/red-like.png"
+                iconEl.src = "images/red-like-bigger.png"
             }
 
                 countEl.textContent = number // Update what is rendered (display)
