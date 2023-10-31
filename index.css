@@ -2,7 +2,8 @@ html, body {
     margin: 0;
     padding: 0;
     font-family: 'Source Sans 3', sans-serif;
-    background-color: #EAD8F2;
+    /* background-color: #EAD8F2; */
+    background-color: #EDEDED;
 }
 
 /* Typography */
@@ -54,15 +55,23 @@ p {
     justify-content: space-between;
     align-items: center;
     padding: 15px 15px;
-    /* border-bottom: 1px solid #C6C6C6; */
+    border-bottom: 1px solid #C6C6C6;
+    margin-bottom: 0;
 }
 
 .artist-info {
     display: flex;
     flex-direction: row;
-    border-top: 1px solid #C6C6C6;
     padding: 12px 15px;
     align-items: center;
+    margin-top: 0;
+}
+
+.name-and-location-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 5px;
 }
 
 .icons-section {
@@ -71,8 +80,9 @@ p {
 }
 
 .comments-section {
-    padding: 0 15px;
+    padding: 0 15px 12px 15px;
     margin: 0;
+    border-bottom: 25px solid #EDEDED;
 }
 
 ul {
@@ -101,7 +111,7 @@ li {
     width: 15%;
     height: 15%;
     border-radius: 50%;
-    margin-right: 7px;
+    margin: 0 7px 7px 0;
 }
 
 .post-image {
